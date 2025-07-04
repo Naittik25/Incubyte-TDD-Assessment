@@ -19,3 +19,7 @@ const { add } = require('../src/stringCalculator');
   test("returns sum of numbers with new line as delimiter", () => {
     expect(add("4\n7,13")).toBe(24);
   })
+
+  test("returns sum of numbers with new line and custom delimiter", () => {
+    expect(add("//;\n7;13")).toBe(20);
+  })
