@@ -23,3 +23,11 @@ const { add } = require('../src/stringCalculator');
   test("returns sum of numbers with new line and custom delimiter", () => {
     expect(add("//;\n7;13")).toBe(20);
   })
+
+  test("throws error for negative numbers", () => {
+    expect(() => add("8,-14,19")).toThrow("Negative numbers not allowed: -14");
+  })
+
+  test("throws error for multiple negative numbers", () => {
+    expect(() => add("6,-13,21,-35")).toThrow("Negative numbers not allowed: -13,-35");
+  })
