@@ -15,3 +15,7 @@ const { add } = require('../src/stringCalculator');
   test("returns sum of multiple numbers", () => {
     expect(add("6,9,14,19,27")).toBe(75);
   })
+
+  test("returns sum of numbers with new line as delimiter", () => {
+    expect(add("4\n7,13")).toBe(24);
+  })
