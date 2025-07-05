@@ -8,7 +8,7 @@ const { add } = require('../src/stringCalculator');
     expect(add("5")).toBe(5);
   });
 
-  test("returns sum of two numbers", () => {
+  test("returns sum of two comma-seperated numbers ", () => {
     expect(add("3,4")).toBe(7);
   })
 
@@ -31,3 +31,7 @@ const { add } = require('../src/stringCalculator');
   test("throws error for multiple negative numbers", () => {
     expect(() => add("6,-13,21,-35")).toThrow("Negative numbers not allowed: -13,-35");
   })
+
+  test('handles unknown amount of numbers', () => {
+    expect(add("1,2,3,4,5")).toBe(15);
+  });

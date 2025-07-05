@@ -3,6 +3,10 @@ function add(numbers) {
     return 0;
   }
 
+  if (!numbers) {
+    return 0;
+  }
+
   let delimiters = [",", "\n"];
   if (numbers.startsWith("//")) {
     const delimiter = numbers.charAt(2);
