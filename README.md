@@ -47,3 +47,30 @@ The implementation supports:
 Multiple delimiters of varying length
 Type safety with number conversion
 Comprehensive input validation
+
+## 📷 Test Screenshots
+
+### Empty string returns 0
+![Empty string returns 0](./screenshots/IMG-20250705-WA0005.jpg)
+
+### Single number input
+![Single number input](./screenshots/IMG-20250705-WA0004.jpg)
+
+### Two & Multiple comma-separated numbers
+![Two & Multiple comma-separated numbers](./screenshots/IMG-20250705-WA0003.jpg)
+
+### Newline as delimiter
+![Newline as delimiter](./screenshots/IMG-20250705-WA0000.jpg)
+
+### Custom delimiter support
+![Custom delimiter support](./screenshots/IMG-20250705-WA0002.jpg)
+
+### Single & Multiple Nagative numbers
+![Single & Multiple Nagative numbers](./screenshots/IMG-20250705-WA0006.jpg)
+
+### Unknown amount of number
+![Unknown amount of number](./screenshots/IMG-20250705-WA0001.jpg)
+
+### Ignore Number>1000 & Multi-character & delimeter
+![Ignore Number>1000 & Multi-character & delimeter](./screenshots/IMG-20250705-WA0007.jpg)
+
